@@ -1,14 +1,10 @@
-const scroll_button = document.querySelector("input.scroll_button");
+const scroll_buttons = document.querySelectorAll("input.scroll_button");
 
-scroll_button.addEventListener('click', function() {
-    document.querySelector("div.second_block").scrollIntoView({behavior: "smooth"});
-});
-
-const scroll_button_2 = document.querySelector("input.scroll_button_2");
-
-scroll_button_2.addEventListener('click', function() {
-    document.querySelector("div.third_block").scrollIntoView({behavior: "smooth"});
-});
+for(i = 0; i < scroll_buttons.length; i++) {
+    scroll_buttons[i].addEventListener('click', function(e) {
+        document.querySelector(e.target.attributes["data-target"].value).scrollIntoView({behavior: "smooth"});
+    });
+}
 
 
 const dating_button = document.querySelector("input.dating_button");
