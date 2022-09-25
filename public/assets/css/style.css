@@ -15,6 +15,9 @@
 @media all and (orientation: landscape) {
     :root {
         --display: inline-block;
+        --widthA: 25vw;
+        --heightA: 25vw;
+        /*--margin_left_right: calc((var(--vw100) - (var(--widthA) * 3)) / 2);*/
         --margin_left_right: 0px;
     }
 }
@@ -22,8 +25,6 @@
 /*Galaxy S10*/
 @media all and (min-width: 360px) and (orientation: landscape) {
     :root {
-        --widthA: 25vw;
-        --heightA: 25vw;
         --font-size_header: 1rem;
         --font-size: 0.8rem;
         --font-size_button: 0.8rem;
@@ -32,8 +33,6 @@
 
 @media all and (min-width: 576px) and (orientation: landscape) {
     :root {
-        --widthA: 25vw;
-        --heightA: 25vw;
         --font-size_header: 1.0rem;
         --font-size: 1.0rem;
         --font-size_button: 1.0rem;
@@ -42,8 +41,6 @@
 
 @media all and (min-width: 768px) and (orientation: landscape) {
     :root {
-        --widthA: 25vw;
-        --heightA: 25vw;
         --font-size_header: 1.2rem;
         --font-size: 1.0rem;
         --font-size_button: 1.0rem;
@@ -52,8 +49,6 @@
 
 @media all and (min-width: 992px) and (orientation: landscape) {
     :root {
-        --widthA: 25vw;
-        --heightA: 25vw;
         --font-size_header: 1.5rem;
         --font-size: 1.2rem;
         --font-size_button: 1.2rem;
@@ -65,15 +60,14 @@
 @media all and (orientation: portrait) {
     :root {
         --display: block;
-        --margin_left_right: 25vw;
+        --widthA: 20vh;
+        --heightA: 20vh;
+        --margin_left_right: calc((var(--vw100) - var(--widthA)) / 2);
     }
 }
 
 @media all and (min-width: 360px) and (orientation: portrait) {
     :root {
-        --widthA: 34vw;
-        --heightA: 34vw;
-        --margin_left_right: 33vw;
         --font-size_header: 1.2rem;
         --font-size: 1rem;
         --font-size_button: 1rem;
@@ -82,8 +76,6 @@
 
 @media all and (min-width: 576px) and (orientation: portrait) {
     :root {
-        --widthA: 25vw;
-        --heightA: 25vw;
         --font-size_header: 1rem;
         --font-size: 0.8rem;
         --font-size_button: 1rem;
@@ -92,9 +84,6 @@
 
 @media all and (min-width: 768px) and (orientation: portrait) {
     :root {
-        --widthA: 34vw;
-        --heightA: 28vw;
-        --margin_left_right: 33vw;
         --font-size_header: 1.5rem;
         --font-size: 1.2rem;
         --font-size_button: 1.2rem;
@@ -103,8 +92,6 @@
 
 @media all and (min-width: 992px) and (orientation: portrait) {
     :root {
-        --widthA: 20vw;
-        --heightA: 20vw;
         --font-size_header: 2.5rem;
         --font-size: 2.2rem;
         --font-size_button: 2.2rem;
@@ -165,11 +152,11 @@ li {
     margin-bottom: 0.5rem;
 }
 
-.first_block_button {
-    width: 5rem;
-    height: 5rem;
+.first_block_button_scroll {
+    width: 3rem;
+    height: 3rem;
     position: absolute;
-    top: calc(var(--vh100) - 7rem);
+    top: calc(var(--vh100) - 5rem);
     right: 2rem;
 }
 
@@ -261,10 +248,10 @@ li {
 }
 
 .second_block_button_scroll {
-    width: 5rem;
-    height: 5rem;
+    width: 3rem;
+    height: 3rem;
     position: absolute;
-    top: calc(var(--vh100) * 2 - 7rem);
+    top: calc(var(--vh100) * 2 - 5rem);
     right: 2rem;
 }
 
