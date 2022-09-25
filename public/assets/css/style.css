@@ -17,7 +17,6 @@
         --display: inline-block;
         --widthA: 25vw;
         --heightA: 25vw;
-        /*--margin_left_right: calc((var(--vw100) - (var(--widthA) * 3)) / 2);*/
         --margin_left_right: 0px;
     }
 }
