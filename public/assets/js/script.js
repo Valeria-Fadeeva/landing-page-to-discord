@@ -17,7 +17,7 @@ dating_button.addEventListener('click', function() {
 const study_button = document.querySelector("input.study_button");
 
 study_button.addEventListener('click', function() {
-    window.open("https://discord.gg/cY68zDnnqF", "_blank");
+    window.open("https://discord.gg/725zXx7RhJ", "_blank");
 });
 
 
@@ -32,6 +32,6 @@ const buttons = document.querySelectorAll("input.discord_button");
 
 for(i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener('click', function() {
-        window.open("https://discord.gg/cY68zDnnqF", "_blank");
+        window.open("https://discord.gg/725zXx7RhJ", "_blank");
     });
 }
