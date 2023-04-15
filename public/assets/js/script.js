@@ -24,7 +24,7 @@ study_button.addEventListener('click', function() {
 const work_button = document.querySelector("input.work_button");
 
 work_button.addEventListener('click', function() {
-    window.open("https://developer_valeria_fadeeva.t.me", "_blank");
+    window.open("https://melawy_tyan.t.me", "_blank");
 });
 
 

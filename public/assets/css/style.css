@@ -2,9 +2,11 @@
     --vw100: 100vw;
     --vh100: 100vh;
     --position-top_photo: calc((var(--vh100) / 24));
-    --font-size_header: 1rem;
     --font-size: 0.8rem;
+    --font-size_header: 1rem;
     --font-size_button: 1rem;
+    --font-color-header: hsl(100, 40%, 60%);
+    --font-color: hsl(35, 40%, 75%);
     --color-0: hsl(0, 0%, 50%);
     --color-1: hsl(160, 20%, 55%);
     --color-2: hsl(35, 40%, 75%);
@@ -106,6 +108,29 @@ body {
     font-size: var(--font-size);
 }
 
+h1, h2, h3, h4, h5, h6 {
+    color: var(--font-color-header);
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+a {
+    color: var(--font-color-header);
+}
+
+a:link {
+    color: var(--font-color-header);
+}
+
+a:hover {
+    color: var(--font-color-header);
+}
+
+a:visited {
+    color: var(--font-color-header);
+}
 
 /* FIRST BLOCK */
 
@@ -146,10 +171,6 @@ body {
 
 .first_block_content_text {
     font-size: var(--font-size);
-}
-
-li {
-    margin-bottom: 0.5rem;
 }
 
 .first_block_button_scroll {
